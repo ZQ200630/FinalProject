@@ -1,0 +1,80 @@
+QWidget {
+   background-color: white;
+}
+
+QLineEdit#account_lineEdit {
+border-width: 1px;
+padding: 1px;
+border-style: solid;
+border-color: #dcdfe6;
+border-radius: 8px;
+font-size : 24px
+}
+
+#label_3 {
+font-weight:bold;
+}
+
+
+QLineEdit#password_lineEdit {
+
+border-width: 1px;
+padding: 1px;
+border-style: solid;
+border-color: #dcdfe6;
+border-radius: 8px;
+font-size : 24px
+}
+
+QLineEdit#password_lineEdit:hover {
+border-width: 1px;
+padding: 1px;
+border-style: solid;
+border-color: #c0c4cc;
+border-radius: 8px;
+}
+
+QLineEdit#account_lineEdit:hover {
+border-width: 1px;
+padding: 1px;
+border-style: solid;
+border-color: #c0c4cc;
+border-radius: 8px;
+}
+
+QLineEdit#account_lineEdit:focus {
+border-width: 2px;
+padding: 1px;
+border-style: solid;
+border-color: #4091ff;
+border-radius: 8px;
+}
+
+QLineEdit#password_lineEdit:focus {
+border-width: 2px;
+padding: 1px;
+border-style: solid;
+border-color: #4091ff;
+border-radius: 8px;
+}
+
+QPushButton#loginButton {
+background-color: #409eff;
+border-radius: 8px;
+font-size : 24px;
+color: white;
+font-weight:bold;
+}
+
+QPushButton#loginButton:hover {
+background-color: #66beff;
+border-radius: 8px;
+}
+
+QPushButton#loginButton:pressed {
+background-color: #3a8ee6;
+border-radius: 8px;
+}
+
+
+
