@@ -22,6 +22,7 @@ SOURCES += \
     loginuser.cpp \
     main.cpp \
     mainwindow.cpp \
+    order.cpp \
     product.cpp \
     qdb.cpp \
     qpnglineeditex.cpp \
@@ -35,6 +36,7 @@ HEADERS += \
     login.h \
     loginuser.h \
     mainwindow.h \
+    order.h \
     product.h \
     qdb.h \
     qpnglineeditex.h \
