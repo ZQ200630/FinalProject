@@ -4,7 +4,7 @@
 
 Dao::Dao()
 {
-    database.Connect("C:/Users/Jason/Desktop/QT/FinalProject/db/FinalProject.db");
+    database.Connect("/Users/jason/Desktop/Git/FinalProject/db/FinalProject.db");
 }
 
 void Dao::test()
@@ -42,4 +42,70 @@ bool Dao::verify(LoginUser user)
     {
         return false;
     }
+}
+
+bool Dao::addUser(User user) {
+    return true;
+}
+bool Dao::deleteUserById(int id) {
+    return true;
+}
+bool Dao::updateUser(User user) {
+    return true;
+}
+User Dao::getUserById(int id) {
+    User user = User();
+    return user;
+}
+QList<User> Dao::getUsersByName(QString name) {
+    QList<User> userList = QList<User>();
+    return userList;
+}
+QList<User> Dao::getAllUsers() {
+    QList<User> userList = QList<User>();
+    return userList;
+}
+
+bool Dao::addProduct(Product product) {
+    return true;
+}
+bool Dao::deleteProductById(int id) {
+    return true;
+}
+bool Dao::updateProduct(Product product) {
+    return true;
+}
+Product Dao::getProductById(int id) {
+    Product product = Product();
+    return  product;
+}
+QList<Product> Dao::getProductsByName(QString name) {
+    QList<Product> productList = QList<Product>();
+    return productList;
+}
+QList<Product> Dao::getAllProducts() {
+    QList<Product> productList = QList<Product>();
+    return productList;
+}
+
+bool Dao::addSupplier(Supplier supplier) {
+    return true;
+}
+bool Dao::deleteSupplierById(int id) {
+    return true;
+}
+bool Dao::updateSupplier(Supplier supplier) {
+    return true;
+}
+Supplier Dao::getSupplierById(int id) {
+    Supplier supplier = Supplier();
+    return supplier;
+}
+QList<Supplier> Dao::getSuppliersByName(QString name) {
+    QList<Supplier> supplierList = QList<Supplier>();
+    return supplierList;
+}
+QList<Supplier> Dao::getAllSuppliers() {
+    QList<Supplier> supplierList = QList<Supplier>();
+    return supplierList;
 }

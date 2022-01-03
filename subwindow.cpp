@@ -15,7 +15,7 @@ SubWindow::SubWindow(QWidget* parent) :
         QString name = this->ui->lineEdit_2->text();
         QString password = this->ui->lineEdit_3->text();
         Dao* dao = DaoFactory::getDao();
-        dao->addUser()
+
     });
 }
 
