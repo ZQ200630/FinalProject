@@ -7,6 +7,8 @@
 #include "login.h"
 #include "qpnglineeditex.h"
 
+#include "dao.h"
+
 int main(int argc, char* argv[])
 {
     QApplication a(argc, argv);
@@ -21,6 +23,9 @@ int main(int argc, char* argv[])
     login log;
     log.setFixedSize(480, 320);
     log.show();
+
+    //    Dao dao;
+    //    dao.test();
 
     //    MainWindow w;
 

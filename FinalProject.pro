@@ -1,4 +1,4 @@
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,19 +16,36 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    dao.cpp \
+    daofactory.cpp \
     login.cpp \
+    loginuser.cpp \
     main.cpp \
     mainwindow.cpp \
-    qpnglineeditex.cpp
+    product.cpp \
+    qdb.cpp \
+    qpnglineeditex.cpp \
+    subwindow.cpp \
+    supplier.cpp \
+    user.cpp
 
 HEADERS += \
+    dao.h \
+    daofactory.h \
     login.h \
+    loginuser.h \
     mainwindow.h \
-    qpnglineeditex.h
+    product.h \
+    qdb.h \
+    qpnglineeditex.h \
+    subwindow.h \
+    supplier.h \
+    user.h
 
 FORMS += \
     login.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    subwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

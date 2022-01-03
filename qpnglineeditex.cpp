@@ -16,7 +16,7 @@ QPngLineEdit::QPngLineEdit(const QString& text, QLineEdit* edit, const QString& 
     setCursor(QCursor(Qt::PointingHandCursor));
 
     QHBoxLayout* buttonLayout = new QHBoxLayout();
-    buttonLayout->setContentsMargins(2, 1, 1, 1);
+    buttonLayout->setContentsMargins(2, 1, 2, 1);
     buttonLayout->addStretch();
     buttonLayout->addWidget(this);
     buttonLayout->setDirection(QBoxLayout::RightToLeft);

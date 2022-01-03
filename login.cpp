@@ -3,6 +3,8 @@
 
 #include "qpnglineeditex.h"
 
+#include "daofactory.h"
+
 
 login::login(QWidget* parent) :
     QMainWindow(parent),
@@ -11,10 +13,7 @@ login::login(QWidget* parent) :
 
     ui->setupUi(this);
 
-    setFixedSize(1920, 1080);
-
     this->setWindowIcon(QIcon(":/pic/school.png"));
-    this->setFixedSize(662, 442);
     QImage Image;
     Image.load(":/pic/school.png");
     //QPixmap pixmap = QPixmap::fromImage(Image);
@@ -31,28 +30,26 @@ login::login(QWidget* parent) :
 
 
     //ui->account_lineEdit->setTextMargins(50, 1, 1, 1);
+    connect(ui->loginButton, &QPushButton::clicked, this, [this]()
+    {
+        QString account = ui->account_lineEdit->text();
+        QString password = ui->password_lineEdit->text();
+        qDebug() << account << endl;
+        qDebug() << password << endl;
+        Dao* dao = DaoFactory::getDao();
+        if(dao->verify(LoginUser(102, account, password)))
+        {
+            qDebug() << "Success Login";
+        }
+        else
+        {
+            qDebug() << "Login Failed";
+        }
+    });
 }
 
 login::~login()
 {
     delete ui;
-
-
 }
 
-void login::on_mannager_Btn_clicked()
-{
-
-}
-
-void login::on_staff_Btn_clicked()
-{
-
-}
-
-
-//退出
-void login::on_exit_btn_clicked()
-{
-    this->close();
-}

@@ -42,11 +42,7 @@ public:
     ~login();
 
 private slots:
-    void on_mannager_Btn_clicked();
 
-    void on_staff_Btn_clicked();
-
-    void on_exit_btn_clicked();
 
 
 private:
