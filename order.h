@@ -7,7 +7,7 @@ class Order
 {
 public:
     Order();
-    Order(int id, tm time, int count, int product_id);
+    Order(int id, tm date, int count, int product_id);
     int id;
     tm date;
     int count;

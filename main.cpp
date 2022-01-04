@@ -7,6 +7,8 @@
 #include "login.h"
 #include "qpnglineeditex.h"
 
+#include "subwindow.h"
+
 #include "dao.h"
 
 int main(int argc, char* argv[])
@@ -23,6 +25,8 @@ int main(int argc, char* argv[])
     login log;
     log.setFixedSize(480, 320);
     log.show();
+    //    SubWindow w;
+    //    w.show();
 
     //    Dao dao;
     //    dao.test();

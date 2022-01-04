@@ -11,9 +11,7 @@ SubWindow::SubWindow(QWidget* parent) :
 
     connect(ui->pushButton, &QPushButton::clicked, this, [this]()
     {
-        QString id = this->ui->lineEdit->text();
-        QString name = this->ui->lineEdit_2->text();
-        QString password = this->ui->lineEdit_3->text();
+
         Dao* dao = DaoFactory::getDao();
 
     });
